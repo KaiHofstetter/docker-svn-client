@@ -12,12 +12,12 @@ Subversion Docker image with an old svn 1.7 client, which is officially not avai
    
    ```
    alias svn='sudo docker run -it --rm -v "$PWD":"$PWD" -w "$PWD" kaihofstetter/svn svn'
-   alias sudo='sudo '
+alias sudo='sudo '
    ```
    
-   This allows you to run svn in the docker image, with a simple 'svn ...'.
+   This allows you to run svn in the docker container, with a simple 'svn ...'.
    
-   The sudo alias is needed to route 'sudo svn...' to the docker image.
+   The sudo alias is needed to route 'sudo svn...' to the docker container.
    
 * Checkout files as host user
    
