@@ -9,3 +9,5 @@ RUN curl -L "http://launchpadlibrarian.net/161750375/libsvn1_1.7.14-1ubuntu2_amd
 
 RUN dpkg -i libsvn_1.7.14.deb
 RUN dpkg -i subversion_1.7.14.deb
+
+RUN echo "store-plaintext-passwords = no" >> /etc/subversion/servers
